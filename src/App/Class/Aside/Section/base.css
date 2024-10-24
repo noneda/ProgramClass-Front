@@ -4,7 +4,6 @@
     background-color: var(--ButtonsColor);
     width: auto;
     margin: 5px 15px;
-    border-radius: 22px;
     height: 4vh;
     display: flex;
     flex-direction: column;
@@ -18,19 +17,31 @@
     border-radius: 12px;
     font-family: "Delius", cursive;
     font-weight: bold;
+    cursor: pointer;
     size: 12px;
     font-style: normal;
 
     text-align: left;
     color: var(--Snow);
+    border-bottom-right-radius: 0;
+}
+
+.Section:first-child {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+
+.Section:last-child {
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
 }
 
 #Select-Section {
     height: auto;
 }
 
-#Select-Section h3{
-    background-color: var(--Orange);
+#Select-Section h3 {
+    background-color: var(--Blue);
 
 }
 

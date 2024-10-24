@@ -3,6 +3,7 @@
     overflow: auto;
     scrollbar-width: none;
     margin: initial;
+    padding: 10px 5px;
     background-color: var(--ButtonsColor);
     box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
     border-radius: 22px;

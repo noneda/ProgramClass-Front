@@ -6,6 +6,7 @@ const Select = (props) => {
       <section className="Select">
         {[...Array(props.Length)].map((_, index) => (
           <button
+            key={index}
             className="button"
             id={props.Select == index ? "Button-Select" : ""}
             onClick={() => {

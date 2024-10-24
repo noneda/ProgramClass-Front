@@ -30,8 +30,9 @@
 
 .SubSection:hover {
     background-color: var(--Yellow);
+    cursor: pointer;
 }
 
 #Select-SubSection {
-    background-color: var(--Yellow);
+    background-color: var(--Green);
 }

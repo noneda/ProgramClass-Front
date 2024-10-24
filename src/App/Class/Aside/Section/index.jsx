@@ -1,7 +1,9 @@
 import SubSection from "./SubSection";
 import "./base.css";
+import { useState } from "react";
 
 const Section = (props) => {
+  const [isSelect, setSelect] = useState(0);
   return (
     <>
       {props.Send.map((item, index) => (
@@ -13,10 +15,18 @@ const Section = (props) => {
           }}
           id={index === props.Select ? "Select-Section" : ""}
         >
-          <h3>{item.Section}</h3>
-          {item.Class.map((item, index) => (
-            <SubSection key={index}>{item}</SubSection>
-          ))}
+          <h3
+            onClick={() => {
+              setSelect(0);
+            }}
+          >
+            {item.Section}
+          </h3>
+          <SubSection
+            Send={item.Class}
+            Select={isSelect}
+            Changes={setSelect}
+          ></SubSection>
         </ul>
       ))}
     </>
