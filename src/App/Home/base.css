@@ -1,0 +1,33 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Carousel-Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+    visibility: hidden;
+
+    width: auto;
+    height: 75vh;
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    background-color: var(--SectionsColor);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+
+    margin: 20px 33px;
+    padding: 5px 20px;
+    width: 150vh;
+}
+
+
+#Show {
+    visibility: visible;
+    order: -1;
+}

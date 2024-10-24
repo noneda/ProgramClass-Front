@@ -1,0 +1,37 @@
+.SubSection {
+    list-style: none;
+    background-color: var(--Blue);
+    margin: 0 0.5vh 0 2.5vh;
+    height: auto;
+    visibility: hidden;
+    width: auto;
+}
+
+.SubSection:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.SubSection h4 {
+    color: var(--Snow);
+    padding: 0 0 0 33px;
+    margin: 6px 0;
+    text-align: left;
+    border-radius: 12px;
+    font-family: "Delius", cursive;
+    font-weight: bold;
+    size: 12px;
+    font-style: normal;
+
+    text-align: left;
+}
+
+
+.SubSection:hover {
+    background-color: var(--Yellow);
+}
+
+#Select-SubSection {
+    background-color: var(--Yellow);
+}

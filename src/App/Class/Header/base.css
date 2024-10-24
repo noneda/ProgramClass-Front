@@ -1,0 +1,47 @@
+.header-class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    background-color: var(--SectionsColor);
+    backdrop-filter: blur(10px);
+
+    margin: 20px 33px;
+    padding: 8px 8px;
+    width: 100vh;
+}
+
+
+.header-class .title {
+    height: 50px;
+    width: 33vh;
+    border-radius: 16px;
+
+    font-size: medium;
+    padding: 0px 22px;
+    transition: opacity 0.66s;
+    text-align: left;
+    background-color: var(--False);
+
+    box-shadow: 1.25px 2.5px 5px rgb(0, 0, 0, 0.15);
+    transition: background-color 0.66s, opacity 0.66s, stroke-width 0.66, box-shadow 1s;
+}
+
+.header-class .title:hover {
+   
+}
+
+
+
+.header-class .title h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Delius", cursive;
+    font-weight: bold;
+    size: 12px;
+    font-style: normal;
+
+    text-align: left;
+    color: var(--Snow);
+}

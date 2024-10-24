@@ -1,0 +1,133 @@
+.header-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    background-color: var(--SectionsColor);
+    backdrop-filter: blur(10px);
+
+    margin: 20px 33px;
+    padding: 5px 20px;
+    width: 75vh;
+}
+
+button {
+    height: 38px;
+    width: auto;
+    border-radius: 22px;
+
+    font-size: medium;
+    cursor: pointer;
+
+    padding: 0px 10px;
+    margin: 5px 5px;
+    transition: opacity 0.66s;
+
+    vertical-align: top;
+    text-align: center;
+    transition: background-color 0.66s, opacity 0.66s, stroke-width 0.66, box-shadow 1s;
+}
+
+button:hover {
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+}
+
+button:active {
+    box-shadow: 2.5px 5px 15PX rgb(0, 0, 0, 0.33);
+    opacity: 0.6;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+}
+
+svg path {
+    stroke: var(--IconColor);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    fill: none;
+}
+
+svg line {
+    stroke: var(--IconColor);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    fill: none;
+}
+
+svg circle {
+    stroke: var(--IconColor);
+    stroke-width: 1.5;
+    fill: var(--IconColor);
+    fill: none;
+}
+
+.button {
+    background-color: var(--ButtonsColor);
+    border: none;
+    text-align: center;
+}
+
+.button:hover svg path {
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    stroke-width: 1.8;
+}
+
+.button:hover svg circle {
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    stroke-width: 2.4;
+}
+
+.div-search {
+    width: 50%;
+    display: flex;
+
+    background-color: initial;
+    height: auto;
+    width: auto;
+    margin: 0px 40px;
+}
+
+.div-search #search {
+    border-radius: 0px 18px 18px 0px;
+    box-shadow: 4px 10px 10px rgb(0, 0, 0, 0.1);
+    margin: 0px;
+    height: 36px;
+}
+
+.div-search #search:hover {
+    box-shadow: 4px 10px 10px rgb(0, 0, 0, 0.20);
+}
+
+
+input[type=text] {
+    border: none;
+    border-right: 3px solid var(--FontColor);
+    border-radius: 18px 0px 0px 18px;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.20);
+
+    height: 36px;
+    width: 45vh;
+
+    text-align: left;
+    cursor: pointer;
+
+    padding: 0px 40px;
+    background-color: var(--ButtonsColor);
+    color: var(--FontColor);
+
+}
+
+input[type=text]::placeholder {
+    color: var(--FontColor);
+    font-size: large;
+}
+
+input[type=text]:focus {
+    border: none;
+    box-shadow: 4px 10px 10px rgb(0, 0, 0, 0.33);
+    outline: none;
+}

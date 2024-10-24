@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.Blocks {
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+    background-color: var(--ButtonsColor);
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+
+    margin: 12px;
+    padding: 5px 12px;
+}
+
+
+.Blocks p {
+    overflow: auto;
+    scrollbar-width: none;
+    height: 100px;
+    width: 200px;
+}
+
+.Blocks .title {
+    height: auto;
+    width: auto;
+    border-radius: 22px;
+
+    font-size: medium;
+    cursor: pointer;
+
+    padding: 0px 10px;
+    margin: 5px 5px;
+    transition: opacity 0.66s;
+
+    vertical-align: top;
+    text-align: center;
+
+    background-color: var(--False);
+
+    box-shadow: 1.25px 2.5px 5px rgb(0, 0, 0, 0.15);
+
+    transition: background-color 0.66s, opacity 0.66s, stroke-width 0.66, box-shadow 1s;
+}
+
+.Blocks .title:active {
+    box-shadow: 2.5px 5px 15PX rgb(0, 0, 0, 0.33);
+    opacity: 0.6;
+}
+
+.Blocks .title h1 {
+    font-family: "Delius", cursive;
+    font-weight: bold;
+
+    font-style: normal;
+
+    text-align: center;
+    color: var(--Snow);
+}
+
+.Blocks picture image {}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Delius&display=swap');
+
+.Select {
+    position: absolute;
+    bottom: 3vh;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 4vh;
+
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    background-color: var(--SectionsColor);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+
+
+}
+
+.Select .button {
+    margin: 5px 12px;
+    height: 30px;
+    padding: 0px 18px;
+    border-radius: 16px;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--FontColor);
+}
+
+
+#Button-Select {
+    background-color: var(--Green);
+}

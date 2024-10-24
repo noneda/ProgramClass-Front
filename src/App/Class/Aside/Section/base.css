@@ -1,0 +1,39 @@
+.Section {
+    padding: 8px 7px;
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    background-color: var(--ButtonsColor);
+    width: auto;
+    margin: 5px 15px;
+    border-radius: 22px;
+    height: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Section h3 {
+    background-color: var(--Green);
+    margin: 5px;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-family: "Delius", cursive;
+    font-weight: bold;
+    size: 12px;
+    font-style: normal;
+
+    text-align: left;
+    color: var(--Snow);
+}
+
+#Select-Section {
+    height: auto;
+}
+
+#Select-Section h3{
+    background-color: var(--Orange);
+
+}
+
+#Select-Section .SubSection {
+    visibility: visible;
+}
