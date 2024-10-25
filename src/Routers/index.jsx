@@ -11,7 +11,7 @@ const paths = [
     errorElement: <Error />,
   },
   {
-    path: "/class",
+    path: "/class/:id",
     element: <ClassRoom />,
     errorElement: <Error />,
   },

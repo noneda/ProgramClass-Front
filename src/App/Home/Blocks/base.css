@@ -60,4 +60,6 @@
     color: var(--Snow);
 }
 
-.Blocks picture image {}
+#Complete {
+    background-color: var(--Green);
+}

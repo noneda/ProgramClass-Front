@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./base.css";
 import ThemeToggler from "./Header";
 import Aside from "./Aside";
@@ -7,23 +8,29 @@ import Status from "./Status";
 
 const ClassRoom = () => {
   const [MenuDataTemporal, setMenuDataTemporal] = useState([]);
+
+  const { id } = useParams();
   useEffect(() => {
     setMenuDataTemporal([
       {
         Section: "Section 1",
         Class: ["Class One", "Class Two", "Class Three"],
+        See: [false, false, false],
       },
       {
         Section: "Section 2",
         Class: ["Class One", "Class Two", "Class Three"],
+        See: [false, false, false],
       },
       {
         Section: "Section 3",
         Class: ["Class One", "Class Two", "Class Three"],
+        See: [false, false, false],
       },
       {
         Section: "Section 4",
         Class: ["Class One", "Class Two", "Class Three"],
+        See: [false, false, false],
       },
       {
         Section: "Section 5",
@@ -37,7 +44,7 @@ const ClassRoom = () => {
   }, []);
   return (
     <>
-      <ThemeToggler>Class Name</ThemeToggler>
+      <ThemeToggler>Class Tittle {id}</ThemeToggler>
       <section className="Container-Class">
         <Aside Send={MenuDataTemporal} />
         <Article />

@@ -12,16 +12,22 @@ const Home = () => {
     setIsBox([
       [
         {
-          title: "Class Tittle",
+          title: "Class Tittle 0",
           text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
+          Complete: false,
+          Percentage: 0,
         },
         {
           title: "Class Tittle 1",
           text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
+          Complete: false,
+          Percentage: 50,
         },
         {
           title: "Class Tittle 2",
           text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
+          Complete: true,
+          Percentage: 100,
         },
       ],
     ]);
@@ -38,7 +44,13 @@ const Home = () => {
             id={isShow === index ? "Show" : ""}
           >
             {item.map((element, i) => (
-              <Blocks key={i} title={element.title} text={element.text} />
+              <Blocks
+                key={i}
+                index={i}
+                title={element.title}
+                Complete={element.Complete}
+                text={element.text}
+              />
             ))}
           </section>
         ))}
