@@ -1,4 +1,6 @@
 import "./base.css";
+import Complete from "../../../../../Components/Complete";
+
 const SubSection = (props) => {
   return (
     <>
@@ -9,9 +11,13 @@ const SubSection = (props) => {
           id={props.Select == index ? "Select-SubSection" : ""}
           onClick={() => {
             props.Changes(index);
+            props.SeeChanges((props.See[index] = true));
           }}
         >
-          <h4>{item} </h4>
+          <h4>
+            {item}
+            {props.See[index] ? <Complete /> : ""}{" "}
+          </h4>
         </li>
       ))}
     </>

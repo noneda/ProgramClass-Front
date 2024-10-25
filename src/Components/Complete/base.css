@@ -1,0 +1,56 @@
+svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+}
+
+svg path {
+    stroke: var(--IconColor);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    fill: none;
+}
+
+svg line {
+    stroke: var(--IconColor);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    fill: none;
+}
+
+svg circle {
+    stroke: var(--IconColor);
+    stroke-width: 1.5;
+    fill: var(--IconColor);
+    fill: none;
+}
+
+h3 svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    margin: 0px 10px;
+}
+
+h3 svg path {
+    stroke: var(--Snow);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+li svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    margin: 0px 10px
+}
+
+li svg path {
+    stroke: var(--Snow);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}

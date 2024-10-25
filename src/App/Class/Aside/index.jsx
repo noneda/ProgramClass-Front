@@ -4,7 +4,7 @@ import Section from "./Section";
 import "./base.css";
 
 const Aside = (props) => {
-  const [isSelect, setSelect] = useState(0);
+  const [isSelect, setSelect] = useState();
   return (
     <>
       <aside className="menu">
@@ -12,6 +12,7 @@ const Aside = (props) => {
           Send={props.Send}
           Select={isSelect}
           Changes={setSelect}
+          Father={props.Changes}
         />
       </aside>
     </>

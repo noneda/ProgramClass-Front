@@ -1,9 +1,10 @@
+import Complete from "../../../../Components/Complete";
 import SubSection from "./SubSection";
 import "./base.css";
 import { useState } from "react";
 
 const Section = (props) => {
-  const [isSelect, setSelect] = useState(0);
+  const [isSelect, setSelect] = useState();
   return (
     <>
       {props.Send.map((item, index) => (
@@ -11,22 +12,26 @@ const Section = (props) => {
           key={index}
           className="Section"
           onClick={() => {
-            props.Changes(index);
+            props.Select === index ? props.Changes(null) : props.Changes(index);
           }}
           id={index === props.Select ? "Select-Section" : ""}
         >
           <h3
             onClick={() => {
-              setSelect(0);
+              setSelect(null);
             }}
           >
             {item.Section}
+
+            {item.See.every((currentValue) => currentValue) ? <Complete /> : ""}
           </h3>
           <SubSection
             Send={item.Class}
             Select={isSelect}
             Changes={setSelect}
-          ></SubSection>
+            See={item.See}
+            SeeChanges={props.Father}
+          />
         </ul>
       ))}
     </>
