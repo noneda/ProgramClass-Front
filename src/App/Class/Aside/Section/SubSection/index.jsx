@@ -11,7 +11,6 @@ const SubSection = (props) => {
           id={props.Select == index ? "Select-SubSection" : ""}
           onClick={() => {
             props.Changes(index);
-            props.SeeChanges((props.See[index] = true));
           }}
         >
           <h4>

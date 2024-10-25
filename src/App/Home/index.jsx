@@ -30,6 +30,26 @@ const Home = () => {
           Percentage: 100,
         },
       ],
+      [
+        {
+          title: "Class Tittle 0",
+          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
+          Complete: false,
+          Percentage: 0,
+        },
+        {
+          title: "Class Tittle 1",
+          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
+          Complete: false,
+          Percentage: 50,
+        },
+        {
+          title: "Class Tittle 2",
+          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
+          Complete: false,
+          Percentage: 100,
+        },
+      ],
     ]);
   }, []);
 

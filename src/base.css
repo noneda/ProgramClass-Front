@@ -17,6 +17,11 @@
 }
 
 .dark {
+    --Green: #577B8D;
+    --Blue: #344C64;
+    --Green-Soft: #76ABAE;
+    --False: #A0153E;
+    --Yellow: #526D82;
 
     --BodyColor: #352F44;
     --SectionsColor: #B9B4C71F;

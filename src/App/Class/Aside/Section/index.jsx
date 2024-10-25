@@ -11,14 +11,12 @@ const Section = (props) => {
         <ul
           key={index}
           className="Section"
-          onClick={() => {
-            props.Select === index ? props.Changes(null) : props.Changes(index);
-          }}
           id={index === props.Select ? "Select-Section" : ""}
         >
           <h3
             onClick={() => {
               setSelect(null);
+              props.Select === index ? props.Changes(null) : props.Changes(index);
             }}
           >
             {item.Section}

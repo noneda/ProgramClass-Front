@@ -20,12 +20,12 @@ const ClassRoom = () => {
       {
         Section: "Section 2",
         Class: ["Class One", "Class Two", "Class Three"],
-        See: [false, false, false],
+        See: [true, true, true],
       },
       {
         Section: "Section 3",
         Class: ["Class One", "Class Two", "Class Three"],
-        See: [false, false, false],
+        See: [true, true, true],
       },
       {
         Section: "Section 4",
@@ -53,7 +53,7 @@ const ClassRoom = () => {
       <section className="Container-Class">
         <Aside Send={MenuDataTemporal} Changes={setMenuDataTemporal} />
         <Article />
-        <Status />
+        <Status Send={MenuDataTemporal} />
       </section>
     </>
   );
