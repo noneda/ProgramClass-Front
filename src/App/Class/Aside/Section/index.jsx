@@ -16,7 +16,9 @@ const Section = (props) => {
           <h3
             onClick={() => {
               setSelect(null);
-              props.Select === index ? props.Changes(null) : props.Changes(index);
+              props.Select === index
+                ? props.Changes(null)
+                : props.Changes(index);
             }}
           >
             {item.Section}
@@ -28,7 +30,6 @@ const Section = (props) => {
             Select={isSelect}
             Changes={setSelect}
             See={item.See}
-            SeeChanges={props.Father}
           />
         </ul>
       ))}

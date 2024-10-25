@@ -8,12 +8,7 @@ const Aside = (props) => {
   return (
     <>
       <aside className="menu">
-        <Section
-          Send={props.Send}
-          Select={isSelect}
-          Changes={setSelect}
-          Father={props.Changes}
-        />
+        <Section Send={props.Send} Select={isSelect} Changes={setSelect} />
       </aside>
     </>
   );

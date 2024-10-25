@@ -10,8 +10,6 @@ const Status = ({ Send }) => {
         i ? y++ : y;
       });
     });
-
-    console.log("100% " + x + "\n" + y);
     return (100 / x) * y;
   };
 
