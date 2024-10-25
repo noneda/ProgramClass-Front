@@ -1,5 +1,6 @@
 .Container-Class {
     display: flex;
+    flex-flow: row wrap;
     height: 80vh;
     width: 175vh;
     box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);

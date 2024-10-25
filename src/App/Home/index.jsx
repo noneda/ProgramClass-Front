@@ -10,23 +10,6 @@ const Home = () => {
 
   useEffect(() => {
     setIsBox([
-      [],
-      [
-        {
-          title: "Class Tittle",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-        },
-      ],
-      [
-        {
-          title: "Class Tittle",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-        },
-        {
-          title: "Class Tittle 1",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-        },
-      ],
       [
         {
           title: "Class Tittle",

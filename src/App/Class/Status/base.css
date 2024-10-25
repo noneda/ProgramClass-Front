@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Delius&family=Modak&display=swap');
+
+.Status {
+    display: flex;
+    flex-flow: row, nowrap;
+    margin: 15px 25px;
+    padding: 10px 5px;
+    background-color: var(--ButtonsColor);
+    box-shadow: 2.5px 5px 10px rgb(0, 0, 0, 0.15);
+    border-radius: 22px;
+    height: 25px;
+    width: 100%;
+
+    align-self: self-start;
+    justify-content: space-around;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.Status .Progress {
+    display: flex;
+    padding: 0;
+    margin: 2px 8px;
+    height: 100%;
+    width: 95%;
+
+    border-radius: 20px;
+    background-color: var(--Green-Soft);
+    align-items: center;
+
+}
+
+.Status .Progress .Current {
+    padding: 0;
+    margin: 1px 4px;
+    height: 50%;
+    border-radius: 19px;
+    background-color: var(--Green);
+}
