@@ -3,54 +3,19 @@ import Header from "./Header";
 import Blocks from "./Blocks";
 import "./base.css";
 import Select from "./Select";
+import { allClass } from "../../Utils/Api";
 
 const Home = () => {
   const [isBox, setIsBox] = useState([]);
   const [isShow, setIsShow] = useState(0);
 
+  const fetchData = async () => {
+    const result = await allClass();
+    setIsBox(result || []);
+  };
+
   useEffect(() => {
-    setIsBox([
-      [
-        {
-          title: "Class Tittle 0",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-          Complete: false,
-          Percentage: 0,
-        },
-        {
-          title: "Class Tittle 1",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-          Complete: false,
-          Percentage: 50,
-        },
-        {
-          title: "Class Tittle 2",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-          Complete: true,
-          Percentage: 100,
-        },
-      ],
-      [
-        {
-          title: "Class Tittle 0",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-          Complete: false,
-          Percentage: 0,
-        },
-        {
-          title: "Class Tittle 1",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-          Complete: false,
-          Percentage: 50,
-        },
-        {
-          title: "Class Tittle 2",
-          text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur expedita, aperiam itaque blanditiis eaque velit eligendi aliquam quasi, nihil optio consequatur qui in perferendis temporibus reiciendis praesentium? Voluptatibus, voluptate exercitationem?",
-          Complete: false,
-          Percentage: 100,
-        },
-      ],
-    ]);
+    fetchData();
   }, []);
 
   return (
