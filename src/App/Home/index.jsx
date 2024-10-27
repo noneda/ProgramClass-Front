@@ -29,13 +29,7 @@ const Home = () => {
             id={isShow === index ? "Show" : ""}
           >
             {item.map((element, i) => (
-              <Blocks
-                key={i}
-                index={i}
-                title={element.title}
-                Complete={element.Complete}
-                text={element.text}
-              />
+              <Blocks key={i} title={element.title} text={element.text} />
             ))}
           </section>
         ))}

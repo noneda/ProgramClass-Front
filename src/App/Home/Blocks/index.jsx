@@ -10,7 +10,7 @@ const Blocks = (props) => {
           className="title "
           id={props.Complete ? "Complete" : ""}
           onClick={() => {
-            nav("/Class/" + props.index);
+            nav("/Class/" + props.title);
           }}
         >
           <h1>{props.title}</h1>

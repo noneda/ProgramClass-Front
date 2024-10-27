@@ -8,14 +8,16 @@ const SubSection = (props) => {
         <li
           key={index}
           className="SubSection"
-          id={props.Select == index ? "Select-SubSection" : ""}
+          id={props.slcSub == index ? "Select-SubSection" : ""}
           onClick={() => {
-            props.Changes(index);
+            props.setSlcSub(index);
           }}
         >
           <h4>
-            {item}
-            {props.See[index] ? <Complete /> : ""}{" "}
+            {item[0]}
+            {/*
+            props.See[index] ? <Complete /> : ""}{" "
+            */}
           </h4>
         </li>
       ))}

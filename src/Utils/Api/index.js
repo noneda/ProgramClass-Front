@@ -26,14 +26,14 @@ export const UniqueClass = async (id) => {
   try {
     const res = await axios.get(`http://127.0.0.1:8000/Api/DataClass/${id}`);
     if (res.status === 200) {
-      const { Class, Sections } = res.data;
-      BubbleSort(Sections, "Order");
-      console.log(Sections);
+      const { Class, set } = res.data;
+      BubbleSortSections(set, "Order");
+      return { Class, set };
     }
   } catch (err) {}
 };
 
-const BubbleSort = (a, par) => {
+const BubbleSortSections = (a, par) => {
   var swapped;
   do {
     swapped = false;

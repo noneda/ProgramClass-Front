@@ -17,9 +17,9 @@ const Status = ({ Send }) => {
     <>
       <div className="Status">
         <div className="Progress">
-          <div className="Current" style={{ width: Percentage() + "%" }}></div>
+          <div className="Current" style={{ width: Send + "%" }}></div>
         </div>
-        {Percentage().toFixed(2)} %
+        {Send} %
       </div>
     </>
   );

@@ -1,53 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./base.css";
 import ThemeToggler from "./Header";
 import Aside from "./Aside";
 import Article from "./Article";
 import Status from "./Status";
+import { UniqueClass } from "../../Utils/Api";
+import "./base.css";
 
 const ClassRoom = () => {
-  const [isMenuDataTemporal, setMenuDataTemporal] = useState([
-    {
-      Section: "Section 1",
-      Class: ["Class One", "Class Two", "Class Three"],
-      See: [true, true, true],
-    },
-    {
-      Section: "Section 2",
-      Class: ["Class One", "Class Two", "Class Three"],
-      See: [true, true, true],
-    },
-    {
-      Section: "Section 3",
-      Class: ["Class One", "Class Two", "Class Three"],
-      See: [true, true, true],
-    },
-    {
-      Section: "Section 4",
-      Class: ["Class One", "Class Two", "Class Three"],
-      See: [false, false, false],
-    },
-    {
-      Section: "Section 5",
-      Class: ["Class One", "Class Two", "Class Three"],
-      See: [false, false, false],
-    },
-    {
-      Section: "Section 6",
-      Class: ["Class One", "Class Two", "Class Three"],
-      See: [false, false, false],
-    },
-  ]);
+  const [isDataAside, setDataAside] = useState([]);
+  const [isTitle, setTittle] = useState("");
+  const [slcSec, setSlcSec] = useState(0);
+  const [slcSub, setSlcSub] = useState(0);
   const { id } = useParams();
+
+  const fetchData = async () => {
+    const { Class, set } = await UniqueClass(id);
+    setDataAside(set || []);
+    setTittle(Class);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
-      <ThemeToggler>Class Tittle {id}</ThemeToggler>
+      <ThemeToggler> {isTitle}</ThemeToggler>
       <section className="Container-Class">
-        <Aside Send={isMenuDataTemporal} />
+        <Aside
+          Send={isDataAside}
+          slcSec={slcSec}
+          setSlcSec={setSlcSec}
+          slcSub={slcSub}
+          setSlcSub={setSlcSub}
+        />
         <Article />
-        <Status Send={isMenuDataTemporal} />
+        <Status Send={50} />
       </section>
     </>
   );
