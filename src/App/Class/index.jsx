@@ -10,8 +10,11 @@ import "./base.css";
 const ClassRoom = () => {
   const [isDataAside, setDataAside] = useState([]);
   const [isTitle, setTittle] = useState("");
-  const [slcSec, setSlcSec] = useState(0);
-  const [slcSub, setSlcSub] = useState(0);
+  const [slcSec, setSlcSec] = useState(null);
+  const [slcSub, setSlcSub] = useState(null);
+  const [idSlc, setIdSlc] = useState(0);
+  const [typeSlc, setTypeSlc] = useState("");
+
   const { id } = useParams();
 
   const fetchData = async () => {
@@ -34,8 +37,10 @@ const ClassRoom = () => {
           setSlcSec={setSlcSec}
           slcSub={slcSub}
           setSlcSub={setSlcSub}
+          setIdSlc={setIdSlc}
+          setTypeSlc={setTypeSlc}
         />
-        <Article />
+        <Article id={idSlc} type={typeSlc} />
         <Status Send={50} />
       </section>
     </>

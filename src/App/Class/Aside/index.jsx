@@ -11,6 +11,8 @@ const Aside = (props) => {
           setSlcSec={props.setSlcSec}
           slcSub={props.slcSub}
           setSlcSub={props.setSlcSub}
+          setIdSlc={props.setIdSlc}
+          setTypeSlc={props.setTypeSlc}
         />
       </aside>
     </>

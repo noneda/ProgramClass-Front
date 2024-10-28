@@ -1,0 +1,30 @@
+.FrameShow {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+    align-content: space-between;
+    margin: 50px 75px;
+
+    font-family: "Delius", cursive;
+    font-weight: bold;
+    size: 12px;
+    font-style: normal;
+
+
+    height: auto;
+    width: auto;
+}
+
+.FrameShow .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrameShow .SectCont {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+}

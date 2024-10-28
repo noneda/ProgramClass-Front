@@ -8,9 +8,17 @@ const SubSection = (props) => {
         <li
           key={index}
           className="SubSection"
-          id={props.slcSub == index ? "Select-SubSection" : ""}
+          id={index === props.slcSub ? "Select-SubSection" : ""}
           onClick={() => {
-            props.setSlcSub(index);
+            if (index === props.slcSub) {
+              props.setSlcSub(null);
+              props.setIdSlc(null);
+              props.setTypeSlc(null);
+            } else {
+              props.setSlcSub(index);
+              props.setIdSlc(item[3]);
+              props.setTypeSlc(item[2]);
+            }
           }}
         >
           <h4>

@@ -14,6 +14,7 @@ const Section = (props) => {
           <h3
             onClick={() => {
               props.setSlcSub(null);
+              props.setTypeSlc(null);
               props.slcSec === index
                 ? props.setSlcSec(null)
                 : props.setSlcSec(index);
@@ -29,6 +30,8 @@ const Section = (props) => {
             Send={item.Class}
             slcSub={props.slcSub}
             setSlcSub={props.setSlcSub}
+            setIdSlc={props.setIdSlc}
+            setTypeSlc={props.setTypeSlc}
             See={item.See}
           />
         </ul>

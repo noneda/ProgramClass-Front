@@ -30,7 +30,9 @@ export const UniqueClass = async (id) => {
       BubbleSortSections(set, "Order");
       return { Class, set };
     }
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const BubbleSortSections = (a, par) => {
@@ -46,4 +48,17 @@ const BubbleSortSections = (a, par) => {
       }
     }
   } while (swapped);
+};
+
+export const getSubSection = async (id) => {
+  try {
+    const res = await axios.get(`http://127.0.0.1:8000/Api/SubSection/${id}`);
+    if (res.status === 200) {
+      const { Data } = res.data;
+      console.log(Data);
+      return Data;
+    }
+  } catch (err) {
+    console.log(err);
+  }
 };
