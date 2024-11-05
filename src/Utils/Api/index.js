@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const allClass = async () => {
   try {
-    const res = await axios.get("http://127.0.0.1:8000/Api/Class/");
+    const res = await axios.get("https://programclass-back-production.up.railway.app/Api/Class/");
     const send = [];
     if (res.status === 200) {
       const { Data } = res.data;
@@ -24,7 +24,7 @@ export const allClass = async () => {
 
 export const UniqueClass = async (id) => {
   try {
-    const res = await axios.get(`http://127.0.0.1:8000/Api/DataClass/${id}`);
+    const res = await axios.get(`https://programclass-back-production.up.railway.app/Api/DataClass/${id}`);
     if (res.status === 200) {
       const { Class, set } = res.data;
       BubbleSortSections(set, "Order");
