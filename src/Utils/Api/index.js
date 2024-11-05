@@ -52,7 +52,7 @@ const BubbleSortSections = (a, par) => {
 
 export const getSubSection = async (id) => {
   try {
-    const res = await axios.get(`http://127.0.0.1:8000/Api/SubSection/${id}`);
+    const res = await axios.get(`https://programclass-back-production.up.railway.app/Api/SubSection/${id}`);
     if (res.status === 200) {
       const { Data } = res.data;
       console.log(Data);
